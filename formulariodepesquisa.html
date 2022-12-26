@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css"> 
+    <link rel="stylesheet" href="estilo/media-query.css">
+    <title>Formulário de Pesquisa</title>
+</head>
+<body>
+    <main>
+        <h1>Formulário de Pesquisa</h1>
+        <p>
+            Prezado(a) Sr(a), estamos realizando uma pesquisa para verificar o conhecimento dos habitantes da cidade de Natal-RN em relação à logistica reversa. A pesquisa está sendo realizada pela aluna Nathalia Karoline Vianna de Souza Marques, do curso de MBA em Gestão Empresarial da Universidade Potiguar - UnP, para o seu trabalho de conclusão de curso. Agradecemos antecipadamente sua colaboração.
+        </p> 
+        <form id="form" action="#" method="post" autocomplete="on" >
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                    <p>
+                        <label for="inome">Nome Completo:</label>
+                        <input type="text" name="nome" id="inome" size="20" required>
+                    </p>
+                    <p>
+                        <label for="iidade">Idade:</label>
+                        <input type="number" name="idade" id="iidade" required max="100">
+                    </p>
+                    <p>
+                        <label for="itel">Telefone:</label>
+                        <input type="tel" name="tel" id="itel" required placeholder="(xx)xxxxx-xxxx" size="10">
+                    </p>
+                    <p>
+                        <label for="iemail">E-mail:</label>
+                        <input type="email" name="email" id="iemail" required size="40" >
+                    </p>
+                    <p>
+                        <label for="ibairro">Bairro em que mora:</label>
+                        <input type="text" name="bairro" id="ibairro">
+                    </p>                
+            </fieldset> 
+            <fieldset id="caixas">
+                <legend>Questionário</legend>
+                <p>
+                    <p class="pergunta" >Você costuma descartar de forma correta o seu lixo ?</p> <br>
+                    <label for="pg1s"><input type="radio" name="sn" id="pg1s" required> Sim </label>
+                    <label for="pg2n"><input type="radio" name="sn" id="pg2n" required> Não </label>
+                </p>
+                <p>
+                    <p class="pergunta">Se não, por qual motivo ? </p> <br>
+                    <label for="pg21"><input type="checkbox" name="perg2[]" id="pg21" required> Falta de conhecimento</label>
+                    <label for="pg22"><input type="checkbox" name="perg2[]" id="pg22" required> Falta de locais apropriados</label>
+                    <label for="pg23"><input type="checkbox" name="perg2[]" id="pg23" required> Falta de tempo</label>
+                    <label for="pg24"><input type="checkbox" name="perg2[]" id="pg24" required> Outros</label>
+                </p>
+                <p>
+                    <p class="pergunta" >Você procura separar o lixo reaproveitável ? </p> <br>
+                    <label for="pg3s"><input type="radio" name="perg3" id="pg3s" required> Sim</label>
+                    <label for="pg3n"><input type="radio" name="perg3" id="pg3n" required> Não</label>
+                </p>
+                <p>
+                    <p class="pergunta" >O bairro em que mora possui coleta seletiva ?</p> <br>
+                    <label for="pg4s"><input type="radio" name="perg4" id="pg4s" required> Sim</label>
+                    <label for="pg4n"><input type="radio" name="perg4" id="pg4n" required> Não</label>
+                    <label for="pg4ns"><input type="radio" name="perg4" id="pg4ns" required> Não sei</label>
+                </p>
+                <p>
+                    <p class="pergunta" >Se sim, com que frequência ela passa ?</p> <br>
+                    <label for="pg51"><input type="radio" name="perg5" id="pg51" required> 1x na semana</label>
+                    <label for="pg52"><input type="radio" name="perg5" id="pg52" required> 2x na semana</label>
+                    <label for="pg53"><input type="radio" name="perg5" id="pg53" required> 1x a cada 15 dias</label>
+                    <label for="pg54"><input type="radio" name="perg5" id="pg54" required> 1x ao mês</label>
+                </p>
+                <p>
+                    <p class="pergunta" >Quais desses produtos você já descartou de forma inadequada?</p><br>
+                    <label for="pg61"><input type="checkbox" name="perg6[]" id="pg61" required> Óleo de cozinha</label>
+                    <label for="pg62"><input type="checkbox" name="perg6[]" id="pg62" required> Garrafa pet</label>
+                    <label for="pg63"><input type="checkbox" name="perg6[]" id="pg63" required> Pilhas e Baterias</label>
+                    <label for="pg64"><input type="checkbox" name="perg6[]" id="pg64" required> Produtos Eletrônicos</label>
+                    <label for="pg65"><input type="checkbox" name="perg6[]" id="pg65" required> Produtos Químicos</label>
+                </p>
+                <p>
+                    <p class="pergunta" >Você sabe se na sua cidade existem pontos de coletas destinados ao recolhimento de lixos específicos ?</p> <br>
+                    <label for="pg7s"><input type="radio" name="perg7" id="pg7s" required>Sim</label>
+                    <label for="pg7n"><input type="radio" name="perg7" id="pg7n" required>Não</label>
+                </p>
+                <p>
+                    <p class="pergunta" >Você sabe o que é logística reversa ?</p><br>
+                    <label for="pg8s"><input type="radio" name="perg8" id="pg8s" required> Sim</label>
+                    <label for="pg8n"><input type="radio" name="perg8" id="pg8n" required> Não</label>
+                </p>
+                <p>
+                    <p class="pergunta" >Você conhece alguma empresa que faça o uso da logística reversa ?</p> <br>
+                    <label for="pg9s"><input type="radio" name="perg9" id="pg9s" required>Sim</label>
+                    <label for="pg9n"><input type="radio" name="perg9" id="pg9n" required>Não </label>
+                </p>
+                <p>
+                    <p class="pergunta"> Você acredita que a logística reversa é uma boa alternativa para ajudar na preservação do meio ambiente ?</p>  <br>
+                    <label for="pg10s"><input type="radio" name="perg10" id="pg10s" required> Sim</label>
+                    <label for="pg10n"><input type="radio" name="perg10" id="pg10n" required> Não</label>
+                </p>
+                <p>
+                    <p class="pergunta"> Se sua resposta foi não por favor explique sua opnião</p> <br>
+                    <textarea name="perg11" id="iperg11" cols="45" rows="10" required></textarea>
+                </p>
+                <p>
+                    <p class="pergunta"> O uso da logística reversa por uma empresa seria um diferencial para você ?</p>  <br>
+                    <label for="pg12s"><input type="radio" name="perg12" id="pg12s" required> Sim</label>
+                    <label for="pg12n"><input type="radio" name="perg12" id="pg12n" required> Não</label>
+                    <label for="indi"><input type="radio" name="perg12" id="indi" required> Indiferente</label>
+                </p>
+               
+            </fieldset>
+            <p>
+                <input id="btn" onclick="enviar()" class="botao" type="submit" value="Enviar"> 
+                <input class='botao' type="reset" value="Limpar">
+            </p>
+        </form>
+    </main>
+   <script src="script/scripts.js"></script>
+</body>
+</html>
